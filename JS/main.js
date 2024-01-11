@@ -1,5 +1,9 @@
+const cardsContainer = document.getElementById("cardsContainer");
+
 /* CICLO DI NUMERI */
 for (let i = 1; i <= 100; i++) {
+  cardsContainer.innerHTML += `
+    <div class="card"><h2>${i}</h2></div>`;
   /* ###### FIZZBUZZ */
   if (i % 15 == 0) {
     console.log("FIZZBUZZ");
